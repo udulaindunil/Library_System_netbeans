@@ -85,6 +85,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         jButton2.setText("Return Boook");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("About");
 
@@ -190,6 +195,12 @@ public class Home extends javax.swing.JFrame {
                 Issue_Books ob=new Issue_Books();
                 ob.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton1_Issue_bookActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+                setVisible(false);
+                Return ob = new Return();
+                ob.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
   
     public static void main(String args[]) {
